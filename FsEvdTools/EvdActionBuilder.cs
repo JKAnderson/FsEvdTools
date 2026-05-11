@@ -6,7 +6,7 @@ public abstract class EvdActionBuilder<T>
 {
     public record Action(int CategoryId, int ActionId, byte[] ArgBuffer);
     public delegate Action ActionImporter(T action);
-    public delegate T ActionExporter(int categoryId, int actionId, byte[] argBuffer);
+    public delegate T ActionExporter(Action action);
 
     public bool BigEndian { get; set; }
 
@@ -40,6 +40,12 @@ public abstract class EvdActionBuilder<T>
             args = default;
             return false;
         }
+    }
+
+    protected T CreateAction(int categoryId, int actionId, ReadOnlySpan<object> args)
+    {
+        var action = new Action(categoryId, actionId, WriteArgBuffer(args));
+        return ExportAction(action);
     }
 
     protected byte[] WriteArgBuffer(ReadOnlySpan<object> args)

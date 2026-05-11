@@ -15,4 +15,4 @@
         => ParseMaybe(action, {0}, {1}, br => new(br), out args);
 
     public T {2}({5})
-        => ExportAction({0}, {1}, WriteArgBuffer([{6}]));
+        => CreateAction({0}, {1}, [{6}]);
