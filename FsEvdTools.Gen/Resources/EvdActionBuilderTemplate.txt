@@ -1,0 +1,12 @@
+using Bex;
+
+namespace FsEvdTools;
+
+public class {0}<T> : EvdActionBuilder<T>
+{{
+    public {0}(ActionImporter importAction, ActionExporter exportAction) : base(importAction, exportAction) {{ }}
+        
+#pragma warning disable IDE1006 // Naming Styles
+{1}
+#pragma warning restore IDE1006 // Naming Styles
+}}

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "FsEvdTools.Gen": {
+      "commandName": "Project",
+      "commandLineArgs": "$(SolutionDir)DarkScript3/DarkScript3/Resources\r\n$(SolutionDir)FsEvdTools/Generated"
+    }
+  }
+}

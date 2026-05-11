@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.5.11723.231 stable
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FsEvdTools.Gen", "FsEvdTools.Gen\FsEvdTools.Gen.csproj", "{65654402-5782-4BF0-B9FF-B11170ACDD53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FsEvdTools", "FsEvdTools\FsEvdTools.csproj", "{A62658D9-C64E-474F-AC92-1DC8D340B6F8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{65654402-5782-4BF0-B9FF-B11170ACDD53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65654402-5782-4BF0-B9FF-B11170ACDD53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65654402-5782-4BF0-B9FF-B11170ACDD53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65654402-5782-4BF0-B9FF-B11170ACDD53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A62658D9-C64E-474F-AC92-1DC8D340B6F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A62658D9-C64E-474F-AC92-1DC8D340B6F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A62658D9-C64E-474F-AC92-1DC8D340B6F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A62658D9-C64E-474F-AC92-1DC8D340B6F8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4A09FE93-549D-4A84-A080-C21B42A6CAA6}
+	EndGlobalSection
+EndGlobal
