@@ -1,6 +1,6 @@
 # FsEvdTools
 
-[![NuGet Version](https://img.shields.io/nuget/v/JKAnderson.FsEvdTools)](https://www.nuget.org/packages/JKAnderson.FsEvdTools)
+[![NuGet Version](https://img.shields.io/nuget/v/JKAnderson.FsEvdTools?logo=nuget&label=NuGet&color=%23004880)](https://www.nuget.org/packages/JKAnderson.FsEvdTools)
 
 Some EMEVD-editing utilities for .NET.
 
