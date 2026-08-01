@@ -78,7 +78,7 @@ namespace FsEvdTools.Gen.Properties {
         ///        =&gt; ParseMaybe(action, {0}, {1}, br =&gt; new(br), out args);
         ///
         ///    public T {2}({5})
-        ///        =&gt; ExportAction({0}, {1}, WriteArgBuffer([{6}]));.
+        ///        =&gt; CreateAction({0}, {1}, [{6}]);.
         /// </summary>
         internal static string EvdActionBuilderActionTemplate {
             get {

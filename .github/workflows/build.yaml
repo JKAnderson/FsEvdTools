@@ -6,28 +6,29 @@ env:
   NUGET_ID: JKAnderson.FsEvdTools
 
 jobs:
-  build:
+  publish-build:
+    name: Publish build
     runs-on: ubuntu-latest
     permissions:
       id-token: write
 
     steps:
     - name: Checkout
-      uses: actions/checkout@v6
+      uses: actions/checkout@v7
       with:
         submodules: true
 
     - name: Build generator
-      run: dotnet build FsEvdTools.Gen --configuration Release --output ./FsEvdTools.Gen/bin
+      run: dotnet build FsEvdTools.Gen --output ./FsEvdTools.Gen/bin
     
     - name: Run generator
       run: ./FsEvdTools.Gen/bin/FsEvdTools.Gen "./DarkScript3/DarkScript3/Resources" "./FsEvdTools/Generated"
     
     - name: Pack library
-      run: dotnet pack FsEvdTools --configuration Release /p:PackageId=${NUGET_ID} --output .
+      run: dotnet pack FsEvdTools /p:PackageId=${NUGET_ID} --output pack
     
     - name: Upload artifact
       uses: actions/upload-artifact@v7
       with:
         name: ${{ github.sha }}
-        path: ${{ env.NUGET_ID }}.1.0.0.nupkg
+        path: "pack/${{ env.NUGET_ID }}.1.0.0.nupkg"
